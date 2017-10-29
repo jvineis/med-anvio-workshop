@@ -2,7 +2,9 @@
 
 create_pyloseq_object <- function(matrix_count, silva_tax, meta){
   
-  library(vegan, phyloseq,ape)
+  library(vegan)
+  library(phyloseq)
+  library(ape)
   
   count <- read.table(matrix_count, header = TRUE)
   count = count[order(count$samples),]
