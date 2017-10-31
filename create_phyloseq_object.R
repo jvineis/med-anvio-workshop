@@ -1,6 +1,6 @@
 #!/usr/bin/R
 
-create_pyloseq_object <- function(matrix_count, silva_tax, meta){
+create_phyloseq_object <- function(matrix_count, silva_tax, meta){
   
   library(vegan)
   library(phyloseq)
